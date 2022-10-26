@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 2em;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .ans {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operators & Expressions</h1>
+    <h3>1. Add two Numbers</h3>
+    <p>You are provided with two numbers A and B. Your task is to add these two numbers.
+        <br> Note: You have to complete AddTwoNumbers function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+  
+            return a+b ;
+          };
+       </pre>
+    <h3>2. Find if the conditions are obeyed or not?</h3>
+    <p>You are given two number first as
+        A
+        and second as
+        B
+        and check if both conditions (
+        A
+        < 10 and A>
+            B
+            ) are satisfied or not with the help of operators.
+
+            <br> Note: You have to complete Is_Valid function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Is_Valid = (a,b) => {
+            if(a<10 && a>b){
+              return true;
+            }
+            else{
+              return false;
+            }
+          };
+       </pre>
+    <h3>3. Check the conditons</h3>
+    <p>
+        You are given two numbers
+        A
+        and
+        B
+        . You need to do the following checks:
+    <ol>
+        <li>if both are divisible by 10 console true.</li>
+        <li>if both are not divisible by 10 console false.</li>
+        <li>if one of them only is divisible by 10 console true.</li>
+    </ol></p>
+    <p>Use operator to do this. <br>Note: You have to complete Check function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Check = (A, B) => {
+            if(A%10==0 && B%10==0){
+            return true;
+            } 
+            else if (A%10!=0 && B%10!=0){
+            return false;
+            }
+            else{
+            return true;
+            }
+        };
+    </pre>
+    <h3>4. Find the first digit of a 4 digit number</h3>
+    <p>
+        You are provided a four digit number N only. Your task is to print out the first digit of that number.
+
+<br> Note: You have to complete First_Digit function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const First_Digit = (n) => {
+            while (n>=10){
+                n/=10;
+              }
+              return Math.floor(n);
+          };
+    </pre>
+    <h3>5. Find the last digit of a 4 digit number</h3>
+    <p>
+        You are provided a four digit number N only. Your task is to print out the last digit of that number.
+
+<br> Note: You have to complete Last_Digit function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Last_Digit = (n) => {
+            return n%10 ;
+          };
+    </pre>
+    <h3>6. Find the remainder</h3>
+    <p>
+        You are provided with two numbers 
+A
+ and 
+B
+ where 
+A
+ as  divisor and 
+B
+ as  dividend.Your task is find the remainder.
+
+ <br> Note: You have to complete Find_the_remainder function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Find_the_remainder = (a,b) => {
+            return b%a ;  
+          };
+    </pre>
+    <h3>7. Multipy two Numbers</h3>
+    <p>
+        You are provided with two numbers 
+A
+ and 
+B
+. Your task is to multiply these two numbers. <br>
+
+Note: You have to complete Multiply_two_number function. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Multiply_two_number = (a,b) => {
+            return a*b;  
+          };
+    </pre>
+    <h3>8. Marks Calculator</h3>
+    <p>
+        Shyam has got his marks in three subjects as 
+A
+, 
+B
+, and 
+C
+ (out of 100).Write a program to calculate his total marks and his average. <br>
+
+Note: You have to complete Sum and Average functions. No need to take any input.
+    </p>
+    <p class="ans">Output:-</p>
+    <pre>
+        const Sum = (A, B, C) => 
+        {
+        return A+B+C;
+        };
+
+        const Average = (A, B, C) => 
+        {
+        return (A+B+C)/3;
+        };
+    </pre>
+</body>
+
+</html>
